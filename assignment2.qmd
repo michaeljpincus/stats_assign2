@@ -352,7 +352,7 @@ Spatial lag regression output
 | Log likelihood                |  -711.493 |           -255.74 |
 | Likelihood ratio test         |        \- |          911.5067 |
 
-: Comparison of Spatial Lag and OLS
+: Comparison of Spatial Lag and OLS {#tbl-lag-vs-ols}
 
 The lag coefficient $\rho$ is 0.651, so the `W_LNMEDHVAL` term is highly significant. It is positive and fairly large: a block group's median house value is highly tied to the median house value of its neighbors, even after controlling for the four predictors.
 
@@ -446,7 +446,7 @@ Based on all criteria listed, the Spatial Error model clearly beats the OLS mode
 | Akaike information criterion |            523.48 |             755.381 |
 | Schwarz criterion            |            556.18 |              782.63 |
 
-: Comparison of Spatial Lag and Spatial Error Models
+: Comparison of Spatial Lag and Spatial Error Models {#tbl-lag-vs-error}
 
 In comparing the Spatial Lag and Spatial Error models, the Likelihood Ratio test should not be used as the models are not nested. The AIC and Schwarz criterion can be compared instead. As seen in @tbl-lag-vs-error, the Spatial Lag model by far has lower values for both criteria.
 
@@ -519,7 +519,7 @@ GWR results
 | Spatial Lag   |  0.818564 |
 | Spatial Error |  0.806957 |
 
-: Regression results comparison
+: Regression results comparison {#tbl-r2}
 
 @tbl-r2 compares the $R^2$ results from the four different regressions. With an $R^2$ of 0.8479, GWR is doing the best job of explaining the variance in the dependent variable. It explains roughly 84.8% of the variance, which is a significant improvement over the OLS that explains only around 66.2% of the variance. While the Spatial Lag (81.9%) and the Spatial Error (80.7%) also improve the OLS dramatically, the GWR still outperforms them with a better fit.
 
@@ -530,7 +530,7 @@ GWR results
 | Spatial Lag   |                       523.48 |
 | Spatial Error |                      755.381 |
 
-: AIC comparison
+: AIC comparison {#tbl-aic}
 
 @tbl-aic compares the Akaike Information Criterion (AIC) across the different models. The AIC from the GWR (308.71) is significantly lower than the three other models, with OLS at 1432.99, Spatial Lag at 523.48, and Spatial Error at 755.38. As a lower AIC is better, the GWR model is the better model.
 
